@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bsd.css">
+</head>
+<body>
+    <header>
+        <img src="1uijq9azzuxd1.jpeg" alt="Logo" class="logo">
+        <ul class="navbar">
+            <li><a href="aceuol.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+           
+      
+    </header>
+    <br>
+    <br>
+    <h1>Heres freeBSD basic commands</h1>
+    <img src="Freebsd-logo.jpg" alt="">
+    <table>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>
+                <code>ls</code>
+                <button class="copy-button" onclick="copyToClipboard('ls')">Copy</button>
+            </td>
+            <td>Lists directory contents.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>cd</code>
+                <button class="copy-button" onclick="copyToClipboard('cd')">Copy</button>
+            </td>
+            <td>Changes the current directory.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>cp</code>
+                <button class="copy-button" onclick="copyToClipboard('cp')">Copy</button>
+            </td>
+            <td>Copies files and directories.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>mv</code>
+                <button class="copy-button" onclick="copyToClipboard('mv')">Copy</button>
+            </td>
+            <td>Moves or renames files and directories.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>rm</code>
+                <button class="copy-button" onclick="copyToClipboard('rm')">Copy</button>
+            </td>
+            <td>Removes files or directories.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>mkdir</code>
+                <button class="copy-button" onclick="copyToClipboard('mkdir')">Copy</button>
+            </td>
+            <td>Creates a new directory.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>man</code>
+                <button class="copy-button" onclick="copyToClipboard('man')">Copy</button>
+            </td>
+            <td>Displays the manual for a command.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>pkg</code>
+                <button class="copy-button" onclick="copyToClipboard('pkg')">Copy</button>
+            </td>
+            <td>Package management tool for installing and managing software.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>pkg install &lt;package&gt;</code>
+                <button class="copy-button" onclick="copyToClipboard('pkg install <package>')">Copy</button>
+            </td>
+            <td>Installs a package.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>pkg update</code>
+                <button class="copy-button" onclick="copyToClipboard('pkg update')">Copy</button>
+            </td>
+            <td>Updates the package repository catalog.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>pkg upgrade</code>
+                <button class="copy-button" onclick="copyToClipboard('pkg upgrade')">Copy</button>
+            </td>
+            <td>Upgrades all installed packages to their latest versions.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>shutdown</code>
+                <button class="copy-button" onclick="copyToClipboard('shutdown')">Copy</button>
+            </td>
+            <td>Shuts down or reboots the system.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>top</code>
+                <button class="copy-button" onclick="copyToClipboard('top')">Copy</button>
+            </td>
+            <td>Displays active processes and system resource usage.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>free</code>
+                <button class="copy-button" onclick="copyToClipboard('free')">Copy</button>
+            </td>
+            <td>Displays free and used memory in the system.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>df</code>
+                <button class="copy-button" onclick="copyToClipboard('df')">Copy</button>
+            </td>
+            <td>Displays disk space usage for file systems.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>du</code>
+                <button class="copy-button" onclick="copyToClipboard('du')">Copy</button>
+            </td>
+            <td>Estimates file and directory space usage.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>ifconfig</code>
+                <button class="copy-button" onclick="copyToClipboard('ifconfig')">Copy</button>
+            </td>
+            <td>Displays or configures network interfaces.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>ping</code>
+                <button class="copy-button" onclick="copyToClipboard('ping')">Copy</button>
+            </td>
+            <td>Checks network connectivity to another host.</td>
+        </tr>
+        <tr>
+            <td>
+                <code>firewall</code>
+                <button class="copy-button" onclick="copyToClipboard('firewall')">Copy</button>
+            </td>
+            <td>Configures the FreeBSD firewall (ipfw, pf).</td>
+        </tr>
+    </table>
+    
+    <script>
+        function copyToClipboard(command) {
+            const el = document.createElement('textarea');
+            el.value = command;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Command copied to clipboard: ' + command);
+        }
+    </script>
+    
+</body>
+</html>

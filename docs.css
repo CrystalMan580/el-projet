@@ -1,0 +1,305 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ebed;
+    color: #272829;
+    margin: 0;
+    padding: 20px;
+}
+header {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center; 
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px; 
+  border-radius: 30px;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; 
+  flex-grow: 1; 
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  color: #ffd700; 
+}
+
+.search-bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #666; 
+  outline: none; 
+}
+h1 {
+    color: #424243;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #e8e8e8;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #d0d0d0;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f8ff;
+}
+code {
+    background-color: #f8f8f8;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #24292e;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -1em;
+    right: 80%;
+    border-radius: 100%;
+    transition: 300ms cubic-bezier(0.4,0,0.2,1);
+    transition-delay: 100ms;
+    opacity: 0;
+  }
+  
+  .input:focus ~ .btn-box, input:valid ~ .btn-box {
+    right: 10%;
+    opacity: 1;
+    transition-delay: 0s;
+    transition: var(--transition);
+  }
+  
+  .input:not(:focus) ~ .btn-box, input:not(:valid) ~ .btn-box {
+    transition-property: right, opacity;
+    transition-delay: 300ms;
+  }
+  
+  .input:focus ~ .btn-box:hover, input:valid ~ .btn-box:hover {
+    transform: scale(1.2);
+  }
+  
+  .input:focus ~ .btn-box:hover:active, input:valid ~ .btn-box:hover:active {
+    transform: scale(1);
+  }
+  
+  .btn-search {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-active);
+    width: 2em;
+    height: 2em;
+    top: 2.5px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    transition: var(--transition);
+  }
+  
+  .btn-search:active {
+    transform: scale(1);
+  }
+  
+  .btn-search svg {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    fill: var(--color-text);
+    width: 12px;
+    height: 12px;
+  }
+  
+  #svg-circle {
+    fill: var(--color-text);
+    transition: var(--transition);
+  }
+  
+  .input:focus ~ .btn-box:hover #svg-circle, input:valid ~ .btn-box:hover #svg-circle {
+    fill: transparent;
+  }
+  
+  .btn-box-x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    right: 7%;
+    opacity: 0;
+    transform: rotate(-90deg) scale(.1);
+    transition: var(--transition);
+  }
+  
+  .input:focus ~ .btn-box-x, input:valid ~ .btn-box-x {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+  
+  .btn-cleare {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    transition: var(--transition);
+  }
+  
+  .btn-cleare svg {
+    width: 15px;
+    height: 15px;
+  }
+  
+  #cleare-line {
+    fill: var(--default-color);
+  }
+  
+  .btn-box-x:hover #cleare-line {
+    fill: var(--color-active);
+  }
+
+
+
+/* From Uiverse.io by barisdogansutcu */ 
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #242a35;
+    border: solid 1px #e8e8e82d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .download-button:hover {
+    box-shadow:
+      rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #303331;
+    border: solid 1px #0b0c0b;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .download-button:hover .download {
+    transform: translateY(100%);
+  }
+  
+  .download svg polyline,
+  .download svg line {
+    animation: docs 1s infinite;
+  }
+  
+  @keyframes docs {
+    0% {
+      transform: translateY(0%);
+    }
+  
+    50% {
+      transform: translateY(-15%);
+    }
+  
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+
+
+
+  .linuz{
+    position: relative;
+    width: 190px;
+    height: 181px;
+    left: 1000px;
+    bottom: 100px;
+    border-radius: 30px;
+  }

@@ -1,0 +1,63 @@
+header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px; 
+    border-radius: 30px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    flex-grow: 1; 
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    color: #ffd700; 
+}
+
+.search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #666; 
+    outline: none; 
+}
+
+.arch{
+    display: flex;
+}
+.linus{
+    display: flex;
+
+}
+.logo{
+    width: 180px;
+    height: 120px;
+}
+.debian{
+    display: flex;
+}

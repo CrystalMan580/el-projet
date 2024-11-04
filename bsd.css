@@ -1,0 +1,95 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e9ebed;
+    color: #272829;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px; 
+    border-radius: 30px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    flex-grow: 1; 
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    color: #ffd700; 
+}
+
+.search-bar {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #666; 
+    outline: none; 
+}
+h1 {
+    color: #424243;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #e8e8e8;
+}
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #d0d0d0;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f8ff;
+}
+code {
+    background-color: #f8f8f8;
+    border: 1px solid #e1e4e8;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #24292e;
+}
+
+ 
